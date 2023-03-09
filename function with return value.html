@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return value</title>
+</head>
+<body>
+    <script>
+        // a ma value aai gai ane e value return thai gai fullname function ma but ene use karva mate mare bijo ek variable banavo padse
+       /*
+        function fullname(fname,lname)
+        {
+            var a = fname + "  " +lname;
+            return a;
+        }
+
+        var myname = fullname('jaimini','patel');
+
+        document.write(myname);*/
+        // basically koi ek value ne biji jagyae use karvi 6e to return use thay
+
+        // find total ,percentage , avg of 5 subject marks of student
+        function sum (english,maths,computer,science,hindi)
+        {
+            var sum = english + maths + computer + science + hindi;
+            return sum;
+
+        }
+
+        function percentage(argument)
+        {
+            var per = (argument/500) * 100;
+            document.write('percentage is',per);
+
+        }
+         
+        function average(av)
+        {
+            var avgg = av / 5 ;
+            document. write('average of marks is',avgg); 
+        }
+
+        
+        var total = sum(70,80,90,65,80);
+                 
+                            document.write('total of marks is',total);
+        
+        // var percentage = percentage(total);
+        //                     document.write('percentage is', percentage);
+        
+        percentage(total);
+        average(total);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

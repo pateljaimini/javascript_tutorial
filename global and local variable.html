@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // first i am declaring global variable
+        var a = 'hello';
+        function global()
+        {
+            document.write(a + "<br>");
+        }
+        global();
+
+        document.write(a + "<br>");
+        
+        // now i am creating local variable
+
+        function local()
+        {
+            var b = 10;
+            document.write(b);
+        }
+
+        local();
+
+        // document.write(b);  this is error bcz local variable can not access globally......
+    </script>
+</body>
+</html>
