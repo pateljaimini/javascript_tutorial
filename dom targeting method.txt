@@ -1,0 +1,56 @@
+var element;
+// element = document;
+// element = document.all[6];
+// element  = document.documentElement;
+// element = document.head;
+// element = document.title;
+// element = document.body;
+// element = document.images;
+// element = document.anchors;
+// element = document.links[2];
+// element = document.forms;
+// element = document.doctype;
+// element = document.URL;
+// element = document.baseURI;
+// element = document.domain;
+// element = document.getElementById('text1');
+// element = document.getElementsByClassName('card-item')[1];
+// element = document.getElementsByTagName('ul');
+
+// element = document.getElementById('header').innerText;
+// element = document.getElementById('header').innerHTML;
+// element = document.getElementById('header').getAttribute('class');
+// element = document.getElementById('header').getAttributeNode('class').value;
+
+// set method:-
+// element = document.getElementById('header').innerText = "<button>search right now</button>";
+// element = document.getElementById('header').innerHTML = "<button>search right now</button>";
+// element = document.getElementsByClassName('search').setAttribute = ("class","research");
+// element = document.getElementById('header').attributes[1].value ="mnp";
+// element = document.getElementById('header').removeAttribute("style");
+
+// get & set by using query selector
+// document.querySelector(".card").innerHTML = "<h3>join and see fun</h3>";
+// element = document.querySelector('.search').getAttribute("class");
+    
+// element = document.querySelectorAll(".search button")[0].innerHTML;
+// document.querySelector('#header').style.backgroundColor = "red";
+
+// element = document.querySelector('#header').style.backgroundColor;
+
+// document.querySelector('#header').className = "abc xyz";
+
+// element = document.querySelector('#header').className;
+
+// document.querySelector('#header').classList = "abc xyz";
+
+// element = document.querySelector('#header').classList[0];
+// document.querySelector('#header').classList.add = "abc";
+// document.querySelector('#header').classList.remove = "abc";
+
+// element = document.querySelector('#header').classList;
+
+// element = document.getElementById('header').attributes[1].value;
+// element = document.getElementById('header').attributes[1].name;
+
+// console.log(element);

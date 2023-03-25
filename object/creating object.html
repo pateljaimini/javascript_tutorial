@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+/*    // note:-   if i can call full object by document.write it returns [object object] 
+// “This” keyword refers to an object that is executing the current piece of code. It references the object that is executing the current function. If the function being referenced is a regular function, “this” references the global
+        var a = {
+            fname : 'jaimini',
+            lname : 'patel',
+            age   :  27,
+            emailid : 'pateljaimini211@gmail.com',
+            // creating array in object...........
+            fvmovie :['kalank','sholay','hum'],
+            // object in object.......
+            living  : {
+                city : 'mehsana',
+                state : 'gujarat',
+                country : 'india'
+            },
+
+            // creating function in object.....
+            salary : function()
+            {
+                return 30000;
+            },
+
+            // create another function with name is fullname ...i want when call my function it's return fname + lname
+            
+            fullname : function()
+            {
+                return this.fname + " " + this.lname;
+            }
+            // if i want to get value of fname and lname then use this keyword
+        };
+        console.log(a);
+        // if i want value from object we have get like this..........
+        document.write(a.fname + "<br>");
+        document.write(a.emailid + "<br>");
+        // console.log(a.lname);
+        // get array value like this........
+
+       document.write(a.fvmovie + "<br>");
+       document.write(a.fvmovie[1] + "<br>");
+
+       document.write(a.salary() + "<br>");
+
+
+       document.write(a.fullname() + "<br>");   /* i got one error ....fname and lname is not defined  */
+
+
+    //   document.write(a.living.country); 
+
+    // new method for creating object...........
+
+    var person = new Object();
+
+    person.fname = prompt('enter your name');
+    person.lname = prompt('enter your surname');
+    person.age = prompt('enter your age');
+    person.emailid = prompt('enter your emailid');
+
+    // console.log(person);
+
+     document.write(person.fname +"<br>");
+     document.write(person.lname +"<br>");
+     document.write(person.age +"<br>");
+     document.write(person.emailid +"<br>");
+    
+    
+    </script>
+</body>
+</html>
