@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html id ="main" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+    /* #header
+    {
+    } */
+    #ul 
+    {
+        height : 10vh;
+        display: flex;
+        /* background-color: black; */
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #ul li 
+    {
+        color: white;
+        padding : 0px 20px;
+        list-style: none;
+        
+    }
+    #ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    #outer
+    {
+        margin-top: 20px;
+        margin-left: 20vw;
+        height: 40vh;
+        width: 40vw;
+        background-color:antiquewhite;
+    }
+    #inner
+    {
+        margin: 20px 0px 0px 40px;
+        height: 30vh;
+        width: 30vw;
+        background-color:pink;
+        display: flex;
+        align-items: center;
+        
+    }
+    .abc
+    {
+        background-color: red;
+    }
+    .xyz
+    {
+        background-color: black;
+    }
+    #inner div
+    {
+        height: 80px;
+        width: 80px;
+        margin-right: 20px;
+        background-color: white;
+        border: 1px solid black;
+    }
+    #inner h2
+    {
+        position: relative;
+        bottom: 80px;
+    }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <nav>
+            <div id = "ul" class="abc xyz">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </div>
+        </nav>
+    </div>
+    <div id="outer">
+        <h4>outer div</h4>
+        <div id="inner">
+            <div>A</div>
+            <div>B</div>
+            <div id="child-c">C</div>
+            <div>D</div>
+        </div>
+    </div>
+    <!-- <script src="index.js"></script> -->
+    <!-- <script src="variable.js"></script> -->
+    <!-- <script src="style.js"></script> -->
+    <!-- <script src="classlist method.js"></script> -->
+    <!-- <script src="traversal method.js"></script> -->
+    <!-- <script src="create method.js"></script> -->
+    <script src="append method.js"></script>
+</body>
+
+
+</html>
