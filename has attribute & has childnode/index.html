@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test" class="">
+        <h2>child heading</h2>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <script>
+        // 1.has attribute(true or false)
+        /*var target = document.getElementById("test");
+
+        var find = target.hasAttribute("class");
+
+        console.log(find);*/
+        // 2.haschildnodes
+        var target = document.getElementById("test");
+
+        var find = target.hasChildNodes();
+
+        console.log(find);
+        // if child tag na mle to space hoy to bi true batave
+    
+    </script>
+</body>
+</html>

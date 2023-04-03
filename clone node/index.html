@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test
+        {
+            height: 40vh;
+            width: 40vw;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list1">
+        <li>orange</li>
+        <li>grapes</li>
+        <li>apple</li>
+        <li>mango</li>
+    </ul>
+    <!-- <ul id="list2">
+        <li>carrot</li>
+        <li>radish</li>
+    </ul> -->
+    <div id="test"></div>
+    <script>
+        var target = document.getElementById("list1").children[2];
+
+        var copyElement = target.cloneNode(true);
+
+        console.log(copyElement);
+
+        // document.getElementById("list2").appendChild(copyElement);
+        // test div me append karne ke liye
+        document.getElementById("test").appendChild(copyElement);
+    </script>
+</body>
+</html>

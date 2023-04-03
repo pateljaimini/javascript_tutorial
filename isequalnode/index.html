@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isequalnode</title>
+    <style>
+     div
+     {
+        display: flex;
+     }
+    </style>
+</head>
+<body>
+    <div>
+    <ul id="list-1">
+        <li class="abc">orange</li>
+        <li>apple</li>
+        <li>grapes</li>
+    </ul>
+
+    <ul id="list-2">
+        <li>orange</li>
+        <li>banana</li>
+    </ul>
+    </div> 
+    <script>
+        var target1 = document.getElementById("list-1").firstElementChild;
+
+        var target2 = document.getElementById("list-2").firstElementChild;
+
+        console.log(target1.isEqualNode(target2));
+    // note:-criteria
+        /*
+        1.same node type
+        2. same node name
+        3.same nodevalue
+        4. same childnodes
+        5. same attributes
+        6. same attribute values
+        */
+
+    </script>
+</body>
+</html>

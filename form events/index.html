@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form events</title>
+</head>
+<body>
+    <form action="" onsubmit="submitFunction()">
+      
+        <label for="name">Name</label><input type="text" id="fname" name="name" onfocus="focusfunction(this)" onblur="blurfunction(this)" oninput="inputfunction(this)" oninvalid="alert('please fill your name')" required> <br><br>
+        <label for ="Class">Class</label><input type="text" id="class1" name="class"onfocus="focusfunction(this)" onblur="blurfunction(this)" oninput="inputfunction(this)"oninvalid="alert('please fill your class')" required> <br><br>
+
+        <label for="">Country</label>
+        <select id="countrylist"onfocus="focusfunction(this)" onblur="blurfunction(this)" onchange="changefunction(this)" oninvalid="alert('please select your Country')" required>
+          <option value=""></option>  
+          <option value="India">India</option>
+            <option value="Spain">Spain</option>
+            <option value="Japan">Japan</option>
+            <option value="France">France</option>
+        </select><br>
+        <select name="" id="" >
+            <textarea name="text" id="summary" cols="30" rows="10" onselect="selectfunction(this)">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam odio aut quasi voluptates delectus cumque debitis velit voluptate officia inventore.</textarea>
+        </select>
+        <input type="submit" value="submit"> 
+        <br><br><br>
+        <div id="test" style="border: 1px solid red;"></div>
+      
+    </form>
+    <script>
+       function focusfunction(element)
+       {
+         element.style.background = "lime";
+       }
+       function blurfunction(element)
+       {
+        element.style.background = "";
+       }
+       function inputfunction(element)
+       {
+         var x = element.value;
+         document.getElementById("test").innerHTML = x;
+       }
+       function changefunction(element)
+       {
+         var x = element.value;
+         document.getElementById("test").innerHTML = x ;
+       }
+       function selectfunction(element)
+       {
+            console.log("you have selected some text!!");
+       }
+       function submitFunction()
+       {
+         var x = document.getElementById("fname").value;
+         var y = document.getElementById("class1").value;
+         var z = document.getElementById("countrylist").value;
+         var a = document.getElementById("summary").value;
+         document.write("your information"+ "<br>" + x +"<br>" + y +"<br>" + z +"<br>" + a);
+       }
+    </script>
+</body>
+</html>
